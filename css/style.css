@@ -14,8 +14,7 @@ body{
     
 }
 
-
-.container{
+ .container{
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -26,8 +25,23 @@ body{
     
     background-color: var(--color-white);
     border-radius: 20px;
-    
 }
+
+@media screen  and (max-width: 768px) and (max-height: 100vh){ 
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2rem;  
+    }
+
+    .main-texts{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    }
+
 
 .main-texts{
     display: flex;
@@ -38,14 +52,24 @@ body{
 }
 
 .main-texts h1{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 50px;
     text-align: center;
     margin-bottom: 250px ;
 
 }
 
-.main-texts p{
-    top: 150%;
+.main-texts h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    font-weight: 400;
+    font-size: 15px;
+    top: 35%;
+    position: relative;
+
+    color: var(--color-blue-700);
 }
 
 .banner img{
